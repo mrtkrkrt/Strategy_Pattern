@@ -28,6 +28,15 @@ The Strategy design pattern allows us to abstract the different variations of fu
 
    This example simulates a payment system that processes payments using different payment methods. The `PaymentProcessor` class uses the `PaymentStrategy` interface to invoke different payment strategies. Classes like `CreditCardPayment` and `PaypalPayment` represent different payment methods and implement the `PaymentStrategy` interface.
 
+3. **Example 2: Sorting Methods**
+
+   - **SortStrategy Interface**: This interface defines the contract for all sorting algorithms. For example, the `sort(int[] array)` method is used to sort an integer array using a specific algorithm.
+
+   - **Concrete Strategies (BubbleSort, SelectionSort, QuickSort)**: Each sorting algorithm is represented by a concrete class that implements the `SortStrategy` interface.
+
+   - **SorterContext**: The `SorterContext` class uses the Strategy pattern. It contains a reference to the current `SortStrategy` and delegates the sorting task to it.
+
+
 ## How to Use
 
 To use the Strategy design pattern in your projects, follow these steps:
